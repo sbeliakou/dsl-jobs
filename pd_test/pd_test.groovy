@@ -16,6 +16,9 @@ job(jobName) {
             extensions {
                 relativeTargetDirectory('ux')
             }
+            browser {
+                url('')
+            }
         }
         git {
             remote {
