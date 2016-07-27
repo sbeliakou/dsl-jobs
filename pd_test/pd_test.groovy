@@ -15,9 +15,6 @@ job(jobName) {
             }
             extensions {
                 relativeTargetDirectory('ux')
-                choosingStrategy {
-                    alternative()
-                }
             }
         }
         git {
