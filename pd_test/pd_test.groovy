@@ -1,8 +1,4 @@
 def jobName="PD-shop-commerce-test-build"
-def shell_script='''#!/bin/bash
-echo step 1
-echo step 2
-'''
 
 job(jobName) {
      multiscm {
@@ -34,6 +30,6 @@ job(jobName) {
         }
     }
     steps {
-        shell(shell_script)
+        shell(readFileFromWorkspace('pd_test/build.sh'))
     }
 }
