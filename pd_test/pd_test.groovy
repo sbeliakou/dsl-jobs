@@ -11,6 +11,7 @@ job(jobName) {
             remote {
                 github('DigitalInnovation/shop-UX', 'ssh')
                 branch('*/${BRANCH_NAME}')
+                credentials('215ce03e-3655-430f-8b86-4753fdb5161f')
             }
             extensions {
                 relativeTargetDirectory('ux')
@@ -20,6 +21,7 @@ job(jobName) {
             remote {
                 github('DigitalInnovation/shop-common-assets', 'ssh')
                 branch('*/${BRANCH_NAME}')
+                credentials('215ce03e-3655-430f-8b86-4753fdb5161f')
             }
             extensions {
                 relativeTargetDirectory('common-assets')
@@ -28,6 +30,7 @@ job(jobName) {
         git {
             remote {
                 github('DigitalInnovation/shop-bnr', 'ssh')
+                credentials('215ce03e-3655-430f-8b86-4753fdb5161f')
             }
             extensions {
                 relativeTargetDirectory('utils')
