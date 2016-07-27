@@ -31,6 +31,7 @@ job(jobName) {
             remote {
                 github('DigitalInnovation/shop-bnr', 'ssh')
                 credentials('215ce03e-3655-430f-8b86-4753fdb5161f')
+                branch('*/master')
             }
             extensions {
                 relativeTargetDirectory('utils')
