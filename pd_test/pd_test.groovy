@@ -1,7 +1,12 @@
 def jobName="PD-shop-commerce-test-build"
 
+def shell_script='''#!/bin/bash
+echo step 1
+echo step 2
+'''
+
 job(jobName) {
-     multiscm {
+    multiscm {
         git {
             remote {
                 github('DigitalInnovation/shop-UX', 'ssh')
